@@ -1,0 +1,15 @@
+.header {
+    height: 107px;
+    background-color: black;
+    opacity: 0.9;
+
+}
+.header__item {
+    width: 198px;
+    height: 9px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}

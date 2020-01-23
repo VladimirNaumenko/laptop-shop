@@ -1,0 +1,28 @@
+.container {
+    /*display: flex;*/
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.item {
+display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+.img{
+    flex: 0 1 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.title{
+    flex: 0 1 30%;
+}
+.price {
+    flex: 0 1 10%;
+}
+.total {
+
+}
+.total {
+    font-size: 30px;
+    text-align: right;
+}

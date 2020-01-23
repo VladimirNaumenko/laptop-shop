@@ -1,0 +1,117 @@
+.catalog {
+    padding: 20px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.filters {
+    flex: 0 0 20%;
+    min-width: 200px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    justify-content: center;
+
+}
+
+.filterItem {
+    margin-bottom: 10px;
+}
+
+.filters_top {
+    background-color: white;
+    padding: 5px 0 5px;
+    margin: 0 5px;
+    justify-content: center;
+    /*border-bottom: 2px solid gray;*/
+
+}
+
+
+
+.list_item {
+    font-size: 14px;
+    list-style: none;
+    margin-top: 5px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.list_name {
+    margin: 0 5px;
+
+}
+
+.title {
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.range {
+    margin-top: 15px;
+
+}
+.range input{
+    width: 70px;
+    margin-left: 5px;
+}
+.rangeTitle{
+
+    text-align: left;
+    font-weight: 600;
+    margin: 5px;
+}
+.rangeManage{
+    display: flex;
+justify-content: start;
+    align-items: center;
+}
+.rangeManage button{
+align-items: flex-end;
+}
+
+
+.sort {
+    display: flex;
+
+}
+
+.select {
+    flex: 0 0 20%;
+}
+
+/* результаты*/
+
+
+.resultsTitle {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.results {
+    padding: 5px;
+    flex: 1 1 80%;
+    background-color: white;
+
+}
+
+.resultsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.goods {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: aliceblue;
+    transition: all 3s;
+}

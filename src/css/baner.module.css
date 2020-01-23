@@ -1,0 +1,60 @@
+.banner {
+
+    background-color: gray;
+    height: 690px;
+
+}
+.text{
+  /*//  margin-top: 250px ;*/
+    padding-top: 250px;
+}
+.upper_text{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+.main_text{
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+.lower_text{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+.danger_text{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* Text style for "$14.999" */
+    color: #ff3333;
+    margin: 0;
+}
+.button{
+
+}
+.img{
+
+}
+.button {
+
+}
+.button_text{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    /* Text style for "Read More" */
+    letter-spacing: 0.72px;
+}

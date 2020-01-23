@@ -1,0 +1,99 @@
+.container {
+    composes: container from 'global.module.css';
+background-color: #ffffff;
+    padding: 0 36px;
+
+}
+.filters {
+    background-color: #f0f3f5;
+}
+.upper_container{
+    display: flex;
+    padding-top: 22px;
+    justify-content: space-between;
+}
+.lower_container{
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.select_container{
+    display: flex;
+    flex: 1 1 50%;
+flex-wrap: wrap;
+}
+.select_title_wrapper{
+width: 100%;
+    margin-bottom: 12px;
+     display: flex;
+     align-items: center;
+    justify-content: center;
+}
+.select_wrapper {
+width: 100%;
+}
+.slider {
+    width: 100%;
+
+}
+.slider_container {
+    flex: 0 1 20%;
+    margin-right: 30px;
+    justify-content: center;
+    text-align: center;
+
+}
+.slider_title{
+    color: #2c3966;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+align-items: center;
+}
+.slider_title_Container{
+
+}
+.checkbox_title{
+    color: #2c3966;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    display: block;
+    line-height: 26px;
+
+}
+.checkBox_container{
+    display: flex;
+    align-items: center;
+}
+.checkBox_wrapper{
+    width: 22%;
+    display: flex;
+    align-items: end;
+}
+.checkBox{
+    color: #2c3966;
+    font-family: Montserrat;
+    font-size: 12px;
+height:50px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.button{
+    width: 270px;
+    height: 40px;
+    background-color: #2e3967;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 38px;
+}

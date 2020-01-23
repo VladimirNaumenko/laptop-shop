@@ -1,0 +1,23 @@
+body {
+    background: #ffffff;
+}
+.container{
+    margin: auto;
+}
+
+.circle {
+    margin: 100px auto;
+    content: '';
+    width: 100px;
+    height: 100px;
+    border: 20px solid #61dafb;
+    border-left: 20px solid transparent;
+    border-radius: 100%;
+    animation: turn 1s infinite linear;
+}
+
+@keyframes turn {
+    100% {
+        transform: rotate(360deg);
+    }
+}

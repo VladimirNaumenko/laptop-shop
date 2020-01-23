@@ -1,0 +1,84 @@
+.header {
+    height: 80px;
+    background-color: black;
+    opacity: 0.9;
+padding-top: 26px;
+}
+.container {
+    composes: container from 'global.module.css';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logoBox{
+    margin-right: 500px;
+    height: 40px;
+    width: 146px;
+}
+.main{
+    display: inline-block;
+    color: #61dafb;
+    text-transform: uppercase;
+    margin: 0;
+}
+.aditional{
+    color: #61dafb;
+    text-transform: uppercase;
+}
+.item {
+    margin-right: 30px ;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    list-style: none;
+}
+.list {
+display: flex;
+
+}
+.button{
+    margin-left: 60px;
+    width: 180px;
+    height: 42px;
+    border: none;
+    background-color: #ff3333;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.cart{
+    width: 60px;
+    height: 40px;
+    background-color: #61dafb;
+    border-radius: 15px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.shoppingCart{
+    background-image: url("../images/shoppingcart.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+text-align: right;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkout{
+    display: flex;
+}
+.logo{
+
+}
+.total{
+    display: block;
+    font-size: 20px;
+}
