@@ -7,6 +7,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: modal linear 0.2s;
+}
+@keyframes modal {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .features {
     display: flex;

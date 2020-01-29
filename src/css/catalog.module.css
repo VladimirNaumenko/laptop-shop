@@ -1,4 +1,5 @@
 .catalog {
+    min-width: 300px;
     padding: 20px;
     background-color: aliceblue;
     display: flex;
@@ -13,7 +14,28 @@
     padding: 5px;
     margin: 5px;
     justify-content: center;
+    position: relative;
+    transition: all 1s;
+}
 
+.filtersPush {
+    transition: all .1s;
+}
+
+@media (max-width: 600px) {
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filterItem {
+        flex: 1 0 100%;
+    }
+
+}
+
+.filterss {
+    transition: all 1s;
 }
 
 .filterItem {
@@ -30,7 +52,6 @@
 }
 
 
-
 .list_item {
     font-size: 14px;
     list-style: none;
@@ -43,45 +64,70 @@
     margin: 0 5px;
 
 }
+.mainTitle{
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    margin: 5px;
+    position: relative;
+}
+
 
 .title {
     width: 100%;
     text-align: left;
     font-weight: 600;
     margin: 5px;
+    position: relative;
 }
 
 .range {
     margin-top: 15px;
 
 }
-.range input{
+
+.range input {
     width: 70px;
     margin-left: 5px;
 }
-.rangeTitle{
+
+.rangeTitle {
 
     text-align: left;
     font-weight: 600;
     margin: 5px;
 }
-.rangeManage{
+
+.rangeText {
     display: flex;
-justify-content: start;
     align-items: center;
 }
-.rangeManage button{
-align-items: flex-end;
+
+.rangeValue {
+    font-size: 14px;
+    display: block;
+}
+
+.rangeManage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.rangeManage button {
+    align-items: flex-end;
+    margin: 5px;
 }
 
 
 .sort {
     display: flex;
-
 }
 
+
 .select {
-    flex: 0 0 20%;
+    width: 255px;
 }
 
 /* результаты*/
@@ -96,22 +142,44 @@ align-items: flex-end;
 
 .results {
     padding: 5px;
-    flex: 1 1 80%;
-    background-color: white;
-
+    flex: 0 1 80%;
 }
 
 .resultsHeader {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+@media (max-width: 750px) {
+    .catalog {
+        flex-direction: column;
+    }
+
+    .filters {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
 }
 
 .goods {
-    padding: 5px;
+    padding: 5px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     background-color: aliceblue;
-    transition: all 3s;
+
 }
+
+@media (max-width: 720px) {
+    .goods {
+        justify-content: center;
+    }
+
+}
+

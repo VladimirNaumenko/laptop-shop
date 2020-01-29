@@ -20,24 +20,17 @@ class Header extends React.Component {
                             <li className={style.item}>Главная</li>
                         </Link>
                         <Link to='/about'>
-                            <li className={style.item}>О проекте</li>
-                        </Link>
-                    </ul>
-                    <Link to='/checkout'>
-                        <div className={style.cart} onClick={() => {
-
-
-                        }}>
+                        <li className={style.item}>О проекте</li>
+                    </Link>
+                        <Link to='/checkout'>
                             <div className={style.checkout}>
                                 <div className={style.shoppingCart}>
                                 </div>
                                 <span className={style.total}>
                                 {this.props.total}</span>
                             </div>
-
-
-                        </div>
-                    </Link>
+                        </Link>
+                    </ul>
 
                 </div>
 
