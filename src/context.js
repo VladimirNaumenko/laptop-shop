@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import
+    React, {Component} from 'react';
 import mainData from "./data"
 
 //slider
@@ -119,6 +120,38 @@ class ProductsProvider extends Component {
 
     }
     //filtering
+    setFiltersBoost = (event) => {
+        let item = event.target.value.value;
+        let type = event.target.value.type;
+        let condition = event.target.checked
+        console.log(condition)
+
+        if (type === "credit"|| type === "delivery"|| type === "delivery") {
+            if (!condition){
+                this.filterByTypeBoost(type,condition)
+                return
+            }
+            this.filterByTypeBoost(type,condition)
+        }
+        else {
+            this.filterByTypeBoost(type,condition)
+        }
+
+    }
+    filterByTypeBoost = (type, condition) => {
+        let items = [...mainData]
+        if (condition){
+            items = items.filter(element => element[type])
+        }
+        else if (!condition){
+            this.setState({sortedProducts: [...items]})
+        } this.setState({sortedProducts: [...items]})
+
+    }
+
+
+
+
     screenFilter=(event)=>{
         console.log("screenFilter")
         let min = event.target.value.value[0]
@@ -249,6 +282,11 @@ class ProductsProvider extends Component {
                 handleChange: this.handleChange,
                 handleSubmit: this.handleSubmit,
                 handle: this.handle,
+                //
+                setFiltersBoost: this.setFiltersBoost,
+                filterByTypeBoost: this.filterByTypeBoost,
+
+                //
                 sortProducts: this.sortProducts,
                 setFilters: this.setFilters,
                 screenFilter: this.screenFilter,
@@ -260,6 +298,7 @@ class ProductsProvider extends Component {
                 addInCart: this.addInCart,
                 tempMinPrice: tempMinPrice,
                 tempMaxPrice: tempMaxPrice,
+                modalOpen: this.state.modalOpen,
                 //checkout
                 addToCheckout: this.addToCheckout,
                 removeFromCheckout: this.removeFromCheckout

@@ -5,12 +5,15 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router} from "react-router-dom";
 import {ProductsProvider} from "./context";
+import {FiltersProvider} from "./components/FiltersContext";
 
 ReactDOM.render(
     <ProductsProvider>
-        <Router>
-            <App/>
-        </Router>
+        <FiltersProvider>
+            <Router>
+                <App/>
+            </Router>
+        </FiltersProvider>
     </ProductsProvider>
 
     , document.getElementById('root'));

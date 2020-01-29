@@ -1,10 +1,11 @@
-import React from 'react';
-import style from "../css/resultCard.module.css";
-import Modal from "./Modal";
+import React, {useState} from 'react';
+import style from "./resultCard.module.css";
+import Modal from "../components/Modal";
 
 import image from "../images/asus_rog.jpg"
 
 function ResultCard(props) {
+    const [close, setClose] = useState(false);
     const {
         id,
         img,
@@ -23,7 +24,11 @@ function ResultCard(props) {
     } = props.product;
     return (
         <>
-        <div className={style.resultCard}>
+        <div className={style.resultCard}
+             style={close ? {position: 'absolute'} : null}
+        >
+            <div className={style.wrapper}
+                 style={close ? {height: "500px", position: 'absolute'} : null}>
             <div className={style.features}>
                 {function() {
                     if (delivery) {
@@ -34,7 +39,10 @@ function ResultCard(props) {
                         return (<div className={style.credit}>Оплата частями</div>)}
                 }()}
             </div>
-            <div className={style.img}>
+            <div className={style.img}
+                 onClick={() => {
+                 setClose(!close)}}
+                 >
                 <div className={style.imgCont} style={{backgroundImage: `url(${props.product.img})`}}>
                 </div>
             </div>
@@ -51,12 +59,13 @@ function ResultCard(props) {
                     <i className="fas fa-check-circle"><span className={style.stockLabel}>В наличии!</span> </i>
                 </div>
             </div>
+            {/*{close?<div>{parameters}</div>:null}*/}
             <div className={style.button} onClick={
                 () => {
                     props.open.open(props.product)
                  }
-
                 }>купить</div>
+            </div>
         </div>
 
             </>
